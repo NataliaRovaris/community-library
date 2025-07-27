@@ -29,6 +29,25 @@ function createUserRepository(newUser) {
     });
 }
 
+function findUserByEmailRepository(email) {
+    return new Promise((res, rej) => {
+        db.get(`
+            SELECT id, username, email, avatar 
+            FROM users
+            WHERE email = ?
+        `, 
+        [email],
+        (err, row) => {
+            if(err) {
+                rej(err);
+            } else {
+                res(row);
+            }
+        });
+    });
+}
+
 export default {
-    createUserRepository
+    createUserRepository,
+    findUserByEmailRepository
 }
