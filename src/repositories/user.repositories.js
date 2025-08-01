@@ -82,7 +82,6 @@ function findAllUserRepository() {
 }
 
 function updateUserRepository(id, user) {
-    console.log()
     return new Promise((res, rej) => {
         const fields = ["username", "email", "password", "avatar"];
         let query = "UPDATE users SET";
