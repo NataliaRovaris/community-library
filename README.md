@@ -14,7 +14,7 @@ Este é um projeto de uma biblioteca comunitária onde os usuários podem postar
 1. Clone o repositório:
 
 ```bash
-    git clone https://github.com/seu-usuario/community-library.git
+    git clone https://github.com/NataliaRovaris/community-library.git
 ```
 
 2. Acesse o diretório do projeto:
